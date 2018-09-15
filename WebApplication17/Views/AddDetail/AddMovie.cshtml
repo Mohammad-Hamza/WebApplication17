@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "AddMovie";
+    Layout = "~/Views/Shared/_MovieLayout.cshtml";
+}
+
+<h2>AddMovie</h2>
+@if (ViewBag.Message != null && ViewBag.Message != "")
+{
+    <h1 class="alert alert-success"><span class="glyphicon glyphicon-ok"></span> @ViewBag.Message</h1>
+}
+<form>
+    <input type="text" name="Name" id="Name" placeholder="Name" />
+    <input type="text" name="City" id="City" placeholder="City" />
+    <input type="text" name="Location" id="Location" placeholder="Location" />
+    <input type="text" name="Owner" id="Owner" placeholder="Owner" />
+    <input type="text" name="HallNo" id="HallNo" placeholder="HallNo" />
+    <input type="submit" value="Submit" />
+</form>
